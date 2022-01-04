@@ -1,0 +1,31 @@
+/* index.css */
+@charset "UTF-8";
+
+#main{ margin-top: 60px; height: 500px; background-color: #555;}
+#main .slider .slide { height: 500px; background-size: cover; background-position: 50% 50%; }
+
+#main .slick-arrow { width: 50px; height: 50px; z-index: 10; background-size: contain; background-position: 50% 50%; opacity: 1; transition: left 0.5s, right 0.5s}
+#main .slick-prev {left: 25px; background-image: url(../img/icon_left.svg); filter: invert(100%); opacity: 0; }
+#main:hover .slick-prev {left: 25px; background-image: url(../img/icon_left.svg); filter: invert(100%); opacity: 1;transition: 0.5s}
+#main .slick-next {right: 25px; background-image: url(../img/icon_right.svg);filter: invert(100%); opacity: 0; }
+#main:hover .slick-next {right: 25px; background-image: url(../img/icon_right.svg);filter: invert(100%); opacity: 1;transition: 0.5s}
+#main .slick-prev:before { content: ""; }
+#main .slick-next:before { content: ""; }
+
+#main .slick-dots { bottom: 25px;}
+#main .slick-dots li  {width: 40px; height: 6px; padding: 0; }
+#main .slick-dots li button {width: 100%; height: 100%; background-color: white; padding: 0;border-radius: 20px; }
+#main .slick-dots li.slick-active  {width: 70px; }
+#main .slick-dots li.slick-active button {background-color: #555; }
+#main .slick-dots li button:before {content:"";}
+
+section {padding: 60px 0;}
+section #cont_01 {padding-top: 180px;}
+section .wrap {width: 1200px; margin: 0 auto;}
+section .wrap .title {border-bottom: 1px solid #555; padding: 10px 0; display: flex; justify-content: space-between; align-items: flex-end;}
+
+section .wrap .title h3 {font-size: 24px; color: #fff; text-transform: uppercase; font-weight: 500;}
+section .wrap .title a {display: block; font-size: 14px; color: #fff; text-transform: capitalize;}
+section .wrap .title a:hover { color: #fa0}
+section .wrap .cont {padding: 20px 0; display: flex; flex-wrap: wrap; margin-left: -10px; margin-right: -10px;}
+section .wrap .cont > div {width: calc(50% - 20px); height: 300px; margin: 0 10px 20px; background-color: #555; background-size: cover; background-position: 50% 50%; cursor: pointer;}

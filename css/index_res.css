@@ -1,0 +1,18 @@
+/* index_res.css */
+
+@charset "UTF-8";
+
+@media (max-width:1199px){
+    section .wrap{width: 100%; padding: 0 20px;}
+  }
+  @media (max-width:767px){
+    #main{height: 400px;}
+    #main .slider .slide{height: 400px;}
+    section{padding: 60px 0 30px;}
+  
+  }
+  
+  @media (max-width:575px){
+    section .wrap .cont > div{width: calc(100% - 20px);}
+  }
+  

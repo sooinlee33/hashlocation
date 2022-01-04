@@ -1,0 +1,27 @@
+/* common.css */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* { box-sizing: border-box;margin: 0;padding: 0;font-family: 'Open Sans', sans-serif;}
+ul, ol, li { list-style: none;}
+a{ display: block; text-decoration: none;}
+
+body {background-color: #171717;}
+
+/* HEADER  */
+header {height: 60px; position: fixed; top: 0; left: 0; width: 100%; background-color: #171717; z-index: 2;}
+header .wrap {width: 1200px; margin: 0 auto; height: 100%;padding: 0 10px; display: flex; justify-content: space-between; align-items: center;; flex-wrap: wrap;}
+header .wrap .logo{}
+header .wrap .logo a{}
+header .wrap .logo a img{display: block; height: 35px;}
+header .wrap nav ul {display: flex; flex-wrap: wrap;}
+header .wrap nav ul li {margin: 0 15px;}
+header .wrap nav ul li a {display: block; text-transform: uppercase; color: #888; font-size: 14px; transition: color .2s;}
+header .wrap nav ul li:hover a{color:#fa0; transition: .2s;}
+
+
+
+
+/* FOOTER 영역 */
+footer {width: 100%; padding: 20px 0; background-color: #171717;  text-align: left; color: #fff; font-size: 14px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+footer p {width: 1200px; margin: 0 auto; display: block;}
